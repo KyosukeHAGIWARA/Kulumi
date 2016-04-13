@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kulumi</title>
+    <link rel="stylesheet" type="text/css" href="./home.css">
+</head>
+<body>
+
+<div id="menu-wrapper">
+	<div class="control">
+		<input type="radio" name="control" id="select1" value="1" checked="" onchange="menu_change()">
+		<label for="select1">Home</label>
+		<input type="radio" name="control" id="select2" value="2" onchange="menu_change()">
+		<label for="select2">Statistics</label>
+		<input type="radio" name="control" id="select3" value="3" onchange="menu_change()">
+		<label for="select3">Reminder</label>
+		<input type="radio" name="control" id="select4" value="4" onchange="menu_change()">
+		<label for="select4">Twitter</label>
+		<input type="radio" name="control" id="select5" value="5" onchange="menu_change()">
+		<label for="select5">About</label>
+	</div>
+</div>
+
+<div id="main-wrapper">
+    <div class="main-content" id="home-content">
+        <div id="home-top">
+            <div id="home-top-left">
+                <div id="home-status"></div>
+            </div>
+            <div id="home-top-right">
+                <div id="home-inoutButton">
+                    <input type="checkbox" id="inout-cb"/>
+                    <label for="inout-cb" data-on-label="入室" data-off-label="退室"></label>
+                </div>
+            </div>
+        </div>
+
+        <div id="home-bottom">
+            <div id="home-bottom-left">
+                <div id="home-restButton"></div>
+                <div id="home-lectureButton"></div>
+            </div>
+            <div id="home-bottom-right">
+                <div id="home-todaysum"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content" id="statistics-content">statistics coming soon</div>
+    <div class="main-content" id="reminder-content">reminder coming soon</div>
+    <div class="main-content" id="twitter-content">twitter coming soon</div>
+    <div class="main-content" id="about-content">about coming soon</div>
+</div>
+<script src="./home.js"></script>
+
+
+</body>
+</html>
